@@ -1,0 +1,253 @@
+h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
+  padding: 0;
+  margin: 0; }
+
+/* buttons */
+.blueButton {
+  width: 220px;
+  height: 43px;
+  background: linear-gradient(#6d6b89, #504e6b);
+  border-radius: 20px;
+  margin: 0 10px;
+  color: white;
+  font-style: italic;
+  font-size: 1.8em;
+  font-family: Georgia, serif; }
+
+.redButton {
+  width: 220px;
+  height: 43px;
+  background: linear-gradient(#cebfc8, #9e8596);
+  border-radius: 20px;
+  margin: 0 10px;
+  color: white;
+  font-style: italic;
+  font-size: 1.8em;
+  font-family: Georgia, serif; }
+
+/* /buttons */
+html {
+  font-size: 16px;
+  font-size: 62.5%;
+  /* 10 xp */ }
+
+body {
+  font-family: Georgia, Serif;
+  color: #4f4d6a; }
+
+#main {
+  max-width: 1550px;
+  width: 95%;
+  height: auto;
+  margin: auto; }
+
+#cover {
+  height: 1135px;
+  width: 100%;
+  background-image: url("images/background.png");
+  overflow: hidden;
+  padding-top: 45px;
+  box-sizing: border-box; }
+  #cover nav {
+    background: url("images/banx.png") no-repeat;
+    width: 61.9354%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }
+    #cover nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-right: 30px;
+      font-size: 1.2em; }
+    #cover nav a:link, #cover nav a:visited, #cover nav a:hover, #cover nav a:active {
+      color: #4f4d6a; }
+    #cover nav a:nth-child(5) {
+      margin-right: 0; }
+  #cover #weAre {
+    text-align: center;
+    margin-top: 115px; }
+    #cover #weAre .whiteLine {
+      height: 0;
+      width: 410px;
+      border-top: 1px solid white;
+      display: inline-block;
+      position: relative;
+      bottom: 5px; }
+    #cover #weAre span {
+      text-transform: uppercase;
+      font-size: 2.4em;
+      margin: 0 23px;
+      font-style: italic; }
+    #cover #weAre h1 {
+      text-transform: uppercase;
+      font-size: 12.5em; }
+    #cover #weAre h5 {
+      text-transform: uppercase;
+      font-size: 1.8em;
+      font-family: OpenSans, sans-serif; }
+    #cover #weAre .whiteLineBottom {
+      height: 0;
+      width: 960px;
+      border-top: 1px solid white;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 40px; }
+
+#worx {
+  height: 800px;
+  width: 100%;
+  background-color: #ebebeb;
+  text-align: center;
+  padding-top: 60px;
+  box-sizing: border-box; }
+  #worx .whiteLine {
+    height: 0;
+    width: 400px;
+    border-top: 1px solid white;
+    display: inline-block;
+    position: relative;
+    bottom: 5px; }
+  #worx span {
+    display: inline;
+    width: 100%;
+    font-size: 1.8em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0 30px; }
+  #worx h2 {
+    font-size: 7.2em;
+    text-transform: uppercase; }
+  #worx .whiteLineBottom {
+    height: 0;
+    width: 960px;
+    border-top: 1px solid white;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px; }
+  #worx #virtues {
+    width: 950px;
+    height: 335px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: left; }
+    #worx #virtues .virtue {
+      height: 100%;
+      width: 25%;
+      font-style: italic;
+      padding: 0 10px; }
+      #worx #virtues .virtue img {
+        display: block;
+        margin: auto; }
+      #worx #virtues .virtue h3 {
+        margin-top: 35px;
+        font-size: 2.2em;
+        font-weight: 100; }
+      #worx #virtues .virtue p {
+        margin-top: 4px;
+        font-size: 1.2em;
+        line-height: 23px; }
+
+#awesome {
+  min-height: 305px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box; }
+  #awesome h3 {
+    display: block;
+    width: 970px;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 2.4em;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px; }
+  #awesome .awesomeBox {
+    height: 170px;
+    width: 320px; }
+    #awesome .awesomeBox p {
+      margin-top: 50px;
+      font-style: italic;
+      font-weight: 100;
+      font-size: 1.2em;
+      line-height: 23px; }
+    #awesome .awesomeBox .viewMore {
+      font-family: Georgia;
+      border: 1px solid #4f4d6a;
+      background-color: #4f4d6a;
+      color: white;
+      width: 100px;
+      height: 22px;
+      font-weight: 700;
+      font-style: italic;
+      border-radius: 4px;
+      margin-top: 23px; }
+  #awesome .awesomeBox:first-child p {
+    margin-top: 0; }
+
+footer {
+  min-height: 310px;
+  height: auto;
+  width: 100%;
+  background-color: #505050;
+  color: white;
+  font-family: OpenSans;
+  box-sizing: border-box;
+  overflow: hidden; }
+  footer #outerFoot {
+    max-width: 910px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; }
+    footer #outerFoot #foot {
+      max-width: 650px;
+      box-sizing: border-box;
+      min-height: 110px;
+      height: auto;
+      margin-top: 48px;
+      padding-right: 70px; }
+      footer #outerFoot #foot h3 {
+        font-size: 2.4em;
+        font-style: italic;
+        font-weight: 100;
+        letter-spacing: 0.025em;
+        margin-bottom: 13px; }
+      footer #outerFoot #foot p {
+        font-size: 1.2em;
+        line-height: 24px;
+        letter-spacing: 0.06em; }
+    footer #outerFoot #contact {
+      width: 260px;
+      box-sizing: border-box;
+      height: 110px;
+      margin-top: 48px; }
+      footer #outerFoot #contact h3 {
+        font-style: italic;
+        font-size: 2.4em;
+        font-weight: 100;
+        letter-spacing: 0.025em;
+        margin-bottom: 13px; }
+      footer #outerFoot #contact p {
+        font-size: 1.2em;
+        line-height: 24px;
+        letter-spacing: 0.06em; }
+  footer #copyright {
+    max-width: 915px;
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 47px;
+    margin-bottom: 25px; }
+
+/*# sourceMappingURL=large.css.map */
