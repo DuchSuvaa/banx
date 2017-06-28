@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
 	font-style: italic;
 	font-size: 1.8em;
 	font-family: Georgia, serif;
+	margin-bottom: 40px;
+	cursor: pointer;
+	border: 1px solid $blue;
 }
 
 .redButton {
@@ -29,6 +32,9 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
 	font-style: italic;
 	font-size: 1.8em;
 	font-family: Georgia, serif;
+	margin-bottom: 40px;
+	cursor: pointer;
+	border: 1px solid #927c90;
 }
 
 /* /buttons */
@@ -57,7 +63,8 @@ body {
 	box-sizing: border-box;
 	nav {
 		background: url("images/banx.png") no-repeat;
-		width: 61.9354%;
+		max-width: 960px;
+		width: 93%;
 		height: 30px;
 		margin: auto;
 		display: flex;
@@ -67,8 +74,9 @@ body {
 		a {
 			text-decoration: none;
 			text-transform: uppercase;
-			margin-right: 30px;
+			margin-right: 3.125%; /* 30px */
 			font-size: 1.2em;
+			text-align: center;
 		}
 		a:link, a:visited, a:hover, a:active {
 			color: $blue;
@@ -80,9 +88,11 @@ body {
 	#weAre {
 		text-align: center;
 		margin-top: 115px;
+		padding: 0 5%;
 		.whiteLine {
 			height: 0;
-			width: 410px;
+			max-width: 410px;
+			width: 26.4516%;
 			border-top: 1px solid white;
 			display: inline-block;
 			position: relative;
@@ -105,7 +115,8 @@ body {
 		}
 		.whiteLineBottom {
 			height: 0;
-			width: 960px;
+			max-width: 960px;
+			width: 61.9354%;
 			border-top: 1px solid white;
 			margin: auto;
 			margin-top: 25px;
@@ -114,15 +125,17 @@ body {
 	}
 }
 #worx {
-	height: 800px;
+	min-height: 800px;
+	height: auto;
 	width: 100%;
 	background-color: #ebebeb;
 	text-align: center;
-	padding-top: 60px;
+	padding: 60px 30px 0;
 	box-sizing: border-box;
 	.whiteLine {
 		height: 0;
-		width: 400px;
+		max-width: 400px;
+		width: 25.8064%;
 		border-top: 1px solid white;
 		display: inline-block;
 		position: relative;
@@ -142,22 +155,42 @@ body {
 	}
 	.whiteLineBottom {
 		height: 0;
-		width: 960px;
+		max-width: 960px;
+		width: 61.9354%;
 		border-top: 1px solid white;
 		margin: auto;
-		margin-top: 25px;
-		margin-bottom: 50px;
+		margin-top: 20px;
+		// margin-bottom: 50px;
+	}
+	#whiteLine2 {
+		height: 0;
+		max-width: 960px;
+		width: 61.9354%;
+		border-top: 1px solid white;
+		margin: auto;
+		margin-top: 30px;
+		margin-bottom: 40px;
 	}
 	#virtues {
-		width: 950px;
-		height: 335px;
+		max-width: 950px;
+		min-height: 335px;
+		height: auto;
 		margin: auto;
 		display: flex;
-		flex-direction: row;
+		flex-flow: row wrap;
 		text-align: left;
-		.virtue {
+		justify-content: center;
+		.wrapper {
+			margin-top: 52px;
+			width: 50%;
+			display: flex;
+			flex-direction: row;
+			text-align: left;
+			min-width: 470px;
+		}
+		.wrapper .virtue {
 			height: 100%;
-			width: 25%;
+			width: 50%;
 			font-style: italic;
 			padding: 0 10px;
 			img {
@@ -179,49 +212,55 @@ body {
 }
 #awesome {
 	min-height: 305px;
+	height: auto;
 	width: 100%;
 	display: flex;
-	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 20px;
+	padding: 20px 30px;
 	box-sizing: border-box;
-	h3 {
-		display: block;
-		width: 970px;
-		font-style: italic;
-		font-weight: 100;
-		font-size: 2.4em;
-		height: 40px;
-		line-height: 40px;
-		margin-bottom: 10px;
-	}
-	.awesomeBox {
-		height: 170px;
-		width: 320px;
-		p {
-			margin-top: 50px;
+	#awesomeContainter {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		height: auto;
+		max-width: 940px;
+		width: 100%;
+		margin-top: 8px;
+		h3 {
+			display: block;
+			width: 100%;
 			font-style: italic;
 			font-weight: 100;
-			font-size: 1.2em;
-			line-height: 23px;
+			font-size: 2.4em;
+			height: 40px;
+			line-height: 40px;
+			margin-bottom: 10px;
 		}
-		.viewMore {
-			font-family: Georgia;
-			border: 1px solid $blue;
-			background-color: $blue;
-			color: white;
-			width: 100px;
-			height: 22px;
-			font-weight: 700;
-			font-style: italic;
-			border-radius: 4px;
-			margin-top: 23px;
-		}
-	}
-	.awesomeBox:first-child {
-		p {
-			margin-top: 0;
+		.awesomeBox {
+			min-height: 160px;
+			height: auto;
+			max-width: 320px;
+			width: 32%;
+			p {
+				font-style: italic;
+				font-weight: 100;
+				font-size: 1.2em;
+				line-height: 23px;
+			}
+			.viewMore {
+				font-family: Georgia;
+				border: 1px solid $blue;
+				background-color: $blue;
+				color: white;
+				width: 100px;
+				height: 22px;
+				font-weight: 700;
+				font-style: italic;
+				border-radius: 4px;
+				margin-top: 25px;
+				cursor: pointer;
+			}
 		}
 	}
 }
@@ -234,9 +273,9 @@ footer {
 	font-family: OpenSans;
 	box-sizing: border-box;
 	overflow: hidden;
+	padding: 0 30px;
 	#outerFoot {
-		max-width: 910px;
-		width: 90%;
+		max-width: 940px;
 		height: auto;
 		margin: auto;
 		display: flex;
@@ -283,7 +322,7 @@ footer {
 	}
 	#copyright {
 		max-width: 915px;
-		width: 90%;
+		width: 100%;
 		box-sizing: border-box;
 		font-size: 1.2em;
 		margin: auto;

@@ -12,7 +12,10 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
   color: white;
   font-style: italic;
   font-size: 1.8em;
-  font-family: Georgia, serif; }
+  font-family: Georgia, serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  border: 1px solid #4f4d6a; }
 
 .redButton {
   width: 220px;
@@ -23,7 +26,10 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
   color: white;
   font-style: italic;
   font-size: 1.8em;
-  font-family: Georgia, serif; }
+  font-family: Georgia, serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  border: 1px solid #927c90; }
 
 /* /buttons */
 html {
@@ -50,7 +56,8 @@ body {
   box-sizing: border-box; }
   #cover nav {
     background: url("images/banx.png") no-repeat;
-    width: 61.9354%;
+    max-width: 960px;
+    width: 93%;
     height: 30px;
     margin: auto;
     display: flex;
@@ -60,18 +67,22 @@ body {
     #cover nav a {
       text-decoration: none;
       text-transform: uppercase;
-      margin-right: 30px;
-      font-size: 1.2em; }
+      margin-right: 3.125%;
+      /* 30px */
+      font-size: 1.2em;
+      text-align: center; }
     #cover nav a:link, #cover nav a:visited, #cover nav a:hover, #cover nav a:active {
       color: #4f4d6a; }
     #cover nav a:nth-child(5) {
       margin-right: 0; }
   #cover #weAre {
     text-align: center;
-    margin-top: 115px; }
+    margin-top: 115px;
+    padding: 0 5%; }
     #cover #weAre .whiteLine {
       height: 0;
-      width: 410px;
+      max-width: 410px;
+      width: 26.4516%;
       border-top: 1px solid white;
       display: inline-block;
       position: relative;
@@ -90,22 +101,25 @@ body {
       font-family: OpenSans, sans-serif; }
     #cover #weAre .whiteLineBottom {
       height: 0;
-      width: 960px;
+      max-width: 960px;
+      width: 61.9354%;
       border-top: 1px solid white;
       margin: auto;
       margin-top: 25px;
       margin-bottom: 40px; }
 
 #worx {
-  height: 800px;
+  min-height: 800px;
+  height: auto;
   width: 100%;
   background-color: #ebebeb;
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 30px 0;
   box-sizing: border-box; }
   #worx .whiteLine {
     height: 0;
-    width: 400px;
+    max-width: 400px;
+    width: 25.8064%;
     border-top: 1px solid white;
     display: inline-block;
     position: relative;
@@ -122,75 +136,100 @@ body {
     text-transform: uppercase; }
   #worx .whiteLineBottom {
     height: 0;
-    width: 960px;
+    max-width: 960px;
+    width: 61.9354%;
     border-top: 1px solid white;
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 50px; }
+    margin-top: 20px; }
+  #worx #whiteLine2 {
+    height: 0;
+    max-width: 960px;
+    width: 61.9354%;
+    border-top: 1px solid white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px; }
   #worx #virtues {
-    width: 950px;
-    height: 335px;
+    max-width: 950px;
+    min-height: 335px;
+    height: auto;
     margin: auto;
     display: flex;
-    flex-direction: row;
-    text-align: left; }
-    #worx #virtues .virtue {
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: center; }
+    #worx #virtues .wrapper {
+      margin-top: 52px;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      min-width: 470px; }
+    #worx #virtues .wrapper .virtue {
       height: 100%;
-      width: 25%;
+      width: 50%;
       font-style: italic;
       padding: 0 10px; }
-      #worx #virtues .virtue img {
+      #worx #virtues .wrapper .virtue img {
         display: block;
         margin: auto; }
-      #worx #virtues .virtue h3 {
+      #worx #virtues .wrapper .virtue h3 {
         margin-top: 35px;
         font-size: 2.2em;
         font-weight: 100; }
-      #worx #virtues .virtue p {
+      #worx #virtues .wrapper .virtue p {
         margin-top: 4px;
         font-size: 1.2em;
         line-height: 23px; }
 
 #awesome {
   min-height: 305px;
+  height: auto;
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 30px;
   box-sizing: border-box; }
-  #awesome h3 {
-    display: block;
-    width: 970px;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 2.4em;
-    height: 40px;
-    line-height: 40px;
-    margin-bottom: 10px; }
-  #awesome .awesomeBox {
-    height: 170px;
-    width: 320px; }
-    #awesome .awesomeBox p {
-      margin-top: 50px;
+  #awesome #awesomeContainter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: auto;
+    max-width: 940px;
+    width: 100%;
+    margin-top: 8px; }
+    #awesome #awesomeContainter h3 {
+      display: block;
+      width: 100%;
       font-style: italic;
       font-weight: 100;
-      font-size: 1.2em;
-      line-height: 23px; }
-    #awesome .awesomeBox .viewMore {
-      font-family: Georgia;
-      border: 1px solid #4f4d6a;
-      background-color: #4f4d6a;
-      color: white;
-      width: 100px;
-      height: 22px;
-      font-weight: 700;
-      font-style: italic;
-      border-radius: 4px;
-      margin-top: 23px; }
-  #awesome .awesomeBox:first-child p {
-    margin-top: 0; }
+      font-size: 2.4em;
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 10px; }
+    #awesome #awesomeContainter .awesomeBox {
+      min-height: 160px;
+      height: auto;
+      max-width: 320px;
+      width: 32%; }
+      #awesome #awesomeContainter .awesomeBox p {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 1.2em;
+        line-height: 23px; }
+      #awesome #awesomeContainter .awesomeBox .viewMore {
+        font-family: Georgia;
+        border: 1px solid #4f4d6a;
+        background-color: #4f4d6a;
+        color: white;
+        width: 100px;
+        height: 22px;
+        font-weight: 700;
+        font-style: italic;
+        border-radius: 4px;
+        margin-top: 25px;
+        cursor: pointer; }
 
 footer {
   min-height: 310px;
@@ -200,10 +239,10 @@ footer {
   color: white;
   font-family: OpenSans;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0 30px; }
   footer #outerFoot {
-    max-width: 910px;
-    width: 90%;
+    max-width: 940px;
     height: auto;
     margin: auto;
     display: flex;
@@ -243,7 +282,7 @@ footer {
         letter-spacing: 0.06em; }
   footer #copyright {
     max-width: 915px;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
     font-size: 1.2em;
     margin: auto;

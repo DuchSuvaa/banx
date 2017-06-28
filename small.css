@@ -1,0 +1,104 @@
+h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
+  padding: 0;
+  margin: 0; }
+
+#main {
+  width: 100%; }
+
+#cover {
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 80px; }
+  #cover nav {
+    background: url("images/banx.png") top center no-repeat;
+    height: 50px;
+    padding-top: 40px;
+    width: 96%;
+    align-items: center;
+    justify-content: center; }
+    #cover nav a {
+      margin-right: 3.125%;
+      /* 30px */
+      font-size: 1.2em;
+      background-position: 20px 10px;
+      height: auto;
+      /* 32 */
+      justify-content: center;
+      padding: 5px 0; }
+  #cover #weAre {
+    margin-top: 50px; }
+    #cover #weAre .whiteLine {
+      width: 26.4516%; }
+    #cover #weAre span {
+      font-size: calc(1.2em + 2vw);
+      margin: 0 1.4838%; }
+    #cover #weAre h1 {
+      font-size: 12.5em;
+      font-size: 18vw; }
+    #cover #weAre h5 {
+      font-size: calc(0.9em + 1.2vw); }
+    #cover #weAre .whiteLineBottom {
+      margin-bottom: 60px; }
+
+#worx {
+  padding-top: 30px; }
+  #worx h2 {
+    font-size: calc(4em + 5vw); }
+  #worx span {
+    display: inline;
+    width: 100%;
+    font-size: 1.8em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0 1.9354%; }
+  #worx .whiteLineBottom {
+    height: 0;
+    max-width: 960px;
+    width: 61.9354%;
+    border-top: 1px solid white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px; }
+  #worx #virtues {
+    min-height: 335px;
+    height: auto;
+    margin: auto;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: center; }
+    #worx #virtues .wrapper {
+      margin: 0 auto;
+      width: 50%;
+      flex-direction: column;
+      text-align: center;
+      min-width: 470px; }
+    #worx #virtues .wrapper .virtue {
+      margin: auto;
+      margin-bottom: 40px; }
+
+#awesome {
+  padding: 20px 10px 0px; }
+  #awesome #awesomeContainter {
+    flex-flow: column wrap;
+    justify-content: center; }
+    #awesome #awesomeContainter h3 {
+      width: 100%;
+      text-align: center;
+      display: block;
+      height: auto;
+      margin-bottom: 20px; }
+    #awesome #awesomeContainter .awesomeBox {
+      width: 90%;
+      max-width: 600px;
+      margin: auto;
+      min-height: 120px;
+      margin-bottom: 40px; }
+
+footer {
+  padding: 0 28px 15px; }
+  footer #copyright {
+    width: 100%; }
+  footer #outerFoot #foot {
+    margin-top: 40px; }
+
+/*# sourceMappingURL=small.css.map */
