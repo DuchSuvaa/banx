@@ -42,6 +42,14 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
 
 #worx {
   padding-top: 30px; }
+  #worx .whiteLine {
+    height: 0;
+    max-width: 410px;
+    width: 22%;
+    border-top: 1px solid white;
+    display: inline-block;
+    position: relative;
+    bottom: 5px; }
   #worx h2 {
     font-size: calc(4em + 5vw); }
   #worx span {
