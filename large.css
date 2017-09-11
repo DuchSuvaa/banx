@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
 .blueButton {
   width: 220px;
   height: 43px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6d6b89), to(#504e6b));
   background: linear-gradient(#6d6b89, #504e6b);
   border-radius: 20px;
   margin: 0 10px;
@@ -20,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
 .redButton {
   width: 220px;
   height: 43px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cebfc8), to(#9e8596));
   background: linear-gradient(#cebfc8, #9e8596);
   border-radius: 20px;
   margin: 0 10px;
@@ -53,17 +55,27 @@ body {
   background-image: url("images/background.png");
   overflow: hidden;
   padding-top: 45px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   #cover nav {
     background: url("images/banx.png") no-repeat;
     max-width: 960px;
     width: 93%;
     height: 30px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     #cover nav a {
       text-decoration: none;
       text-transform: uppercase;
@@ -115,7 +127,8 @@ body {
   background-color: #ebebeb;
   text-align: center;
   padding: 60px 30px 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   #worx .whiteLine {
     height: 0;
     max-width: 400px;
@@ -154,15 +167,27 @@ body {
     min-height: 335px;
     height: auto;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     text-align: left;
-    justify-content: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     #worx #virtues .wrapper {
       margin-top: 52px;
       width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       text-align: left;
       min-width: 470px; }
     #worx #virtues .wrapper .virtue {
@@ -186,15 +211,29 @@ body {
   min-height: 305px;
   height: auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 30px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   #awesome #awesomeContainter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: auto;
     max-width: 940px;
     width: 100%;
@@ -238,19 +277,28 @@ footer {
   background-color: #505050;
   color: white;
   font-family: OpenSans;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow: hidden;
   padding: 0 30px; }
   footer #outerFoot {
     max-width: 940px;
     height: auto;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
     footer #outerFoot #foot {
       max-width: 650px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       min-height: 110px;
       height: auto;
       margin-top: 48px;
@@ -267,7 +315,8 @@ footer {
         letter-spacing: 0.06em; }
     footer #outerFoot #contact {
       width: 260px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       height: 110px;
       margin-top: 48px; }
       footer #outerFoot #contact h3 {
@@ -283,10 +332,9 @@ footer {
   footer #copyright {
     max-width: 915px;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 1.2em;
     margin: auto;
     margin-top: 47px;
     margin-bottom: 25px; }
-
-/*# sourceMappingURL=large.css.map */

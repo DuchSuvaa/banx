@@ -14,8 +14,12 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
     height: 50px;
     padding-top: 40px;
     width: 96%;
-    align-items: center;
-    justify-content: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     #cover nav a {
       margin-right: 3.125%;
       /* 30px */
@@ -23,7 +27,9 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
       background-position: 20px 10px;
       height: auto;
       /* 32 */
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       padding: 5px 0; }
   #cover #weAre {
     margin-top: 50px; }
@@ -71,13 +77,21 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
     min-height: 335px;
     height: auto;
     margin: auto;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     text-align: left;
-    justify-content: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     #worx #virtues .wrapper {
       margin: 0 auto;
       width: 50%;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       text-align: center;
       min-width: 470px; }
     #worx #virtues .wrapper .virtue {
@@ -87,8 +101,13 @@ h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
 #awesome {
   padding: 20px 10px 0px; }
   #awesome #awesomeContainter {
-    flex-flow: column wrap;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     #awesome #awesomeContainter h3 {
       width: 100%;
       text-align: center;
@@ -108,5 +127,3 @@ footer {
     width: 100%; }
   footer #outerFoot #foot {
     margin-top: 40px; }
-
-/*# sourceMappingURL=small.css.map */
